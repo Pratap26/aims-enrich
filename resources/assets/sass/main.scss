@@ -1,0 +1,14 @@
+@import 'abstracts/variables';
+@import 'vendors/bootstrap.min';
+@import 'vendors/font-awesome.min';
+
+@import 'base/normalize';
+
+@import 'components/scheduleItem';
+@import 'components/courseItem';
+
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/course';
+
+@import 'pages/home';

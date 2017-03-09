@@ -1,0 +1,117 @@
+.courseMetaPage {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.courseList-box {
+	width: 30%;
+    display: inline-block;
+}
+.coursesList-headline {
+	color: $purple;
+	font-size: 2em;
+	text-align: center;
+	font-family: $pt;
+}
+
+.courseList {
+	padding: 1em 0 1em 1em;
+    list-style: none;
+    background-color: $yellowgreen;
+    margin: 0;
+    a {
+    	text-decoration: none;
+    	color: #000;
+    	:hover {
+    		background-color: #fff;
+    	}
+    }
+    li {
+    	padding: 1em 2em;
+    }
+}
+
+.courseType {
+	border-top: 1px solid #000;
+	font-weight: bold;
+}
+
+.callbackForm-box {
+	background: $purple;
+	text-align: center;
+	padding: 1em 0;
+	p {
+		font-size: 1.5em;
+	    font-weight: bold;
+	    color: #fff;
+	}
+	input {
+		display: block;
+		width: 100%;
+		max-width: 70%;
+		margin: 0.5em auto;
+		padding: 1em;
+	}
+	input[type="submit"] {
+		max-width: 40%;
+		color: #fff;
+		background-color: #444;
+		border: none;
+		font-weight: bold;
+	}
+}
+
+
+
+/* Course Meta Data */
+.courseMetaData-box {
+	width: 70%;
+	padding: 1em;
+}
+
+.courseMetaData-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: green;	
+}
+
+.courseMetaData-description {
+}
+
+.courseMetaData-subheading {
+	margin: 2em 0;
+	font-weight: bold;
+}
+
+#accordion .panel-default>.panel-heading {
+    background-color: #fff;
+    border: 0.01em solid #cac7c7;
+    border-width: 0.25px;
+}
+
+.accordion {
+	a {
+		text-decoration: none;
+	}
+	.panel-head {
+	    color: $purple;
+        font-size: 1em;
+	}
+	.panel-default {
+	    border: none;
+	    .panel-heading {
+		    background-color: #fff;
+		    border: 0.1em solid #ddd;
+		}
+	}
+	.panel-body > .panel-ul {
+		list-style-type: square;
+	    color: $purple;
+	    font-size: 1.1em;
+	    .panel-p {
+	    	color: #000;
+	    }
+	}
+}
