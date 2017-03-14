@@ -3,6 +3,7 @@
 @import 'vendors/font-awesome.min';
 
 @import 'base/normalize';
+@import 'base/global';
 
 @import 'components/scheduleItem';
 @import 'components/courseItem';
@@ -10,5 +11,6 @@
 @import 'layouts/header';
 @import 'layouts/footer';
 @import 'layouts/course';
+@import 'layouts/coursesIcons';
 
 @import 'pages/home';

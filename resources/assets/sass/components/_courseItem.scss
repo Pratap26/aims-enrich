@@ -3,7 +3,8 @@
     justify-content: space-between;
 }
 .courseItem-block {
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
     display: inline-block;
     margin: 1em;
 }

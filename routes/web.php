@@ -19,13 +19,25 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('livestream', function() {
+	return view('livestream');
+});
 
 Route::get('individual-courses', function() {
 	return view('courses.individual_courses');
 });
 
 Route::group(['prefix' => 'individual-courses'], function () {
-    Route::get('business-analytics', function() {
-    	return view('business_analytics');
+	Route::get('adobe-photoshop', function() {
+    	return view('courses.individual_courses.adobe_photoshop');
     });
+    Route::get('business-analytics', function() {
+    	return view('courses.individual_courses.business_analytics');
+    });
+});
+
+Route::group(['prefix' => 'individual-courses/adobe-photoshop'], function () {
+	Route::get('basic', function() {
+    	return view('courses.individual_courses.adobe_photoshop.basics');
+    })->name('adobe_photoshop_basics');
 });

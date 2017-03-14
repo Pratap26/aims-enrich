@@ -1,12 +1,14 @@
 .courseMetaPage {
 	width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 2em;
 }
 
 .courseList-box {
-	width: 30%;
+	width: 25%;
     display: inline-block;
 }
 .coursesList-headline {
@@ -25,12 +27,16 @@
     	text-decoration: none;
     	color: #000;
     	:hover {
-    		background-color: #fff;
+    		background-color: #efefef;
     	}
     }
     li {
     	padding: 1em 2em;
     }
+}
+
+.currentCourse {
+	background-color: #fff;
 }
 
 .courseType {
@@ -67,14 +73,27 @@
 
 /* Course Meta Data */
 .courseMetaData-box {
-	width: 70%;
-	padding: 1em;
+	width: 75%;
+    padding: 3.5em 1em 1em 1em;
 }
+
+.branchSection {
+	margin: 2em 0;
+	border-bottom: 2px solid #eee;
+}
+.knowMore {
+	text-align: right;
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
 
 .courseMetaData-title {
 	font-weight: bold;
 	font-size: 1.2em;
-	color: green;	
+	color: $purple;	
 }
 
 .courseMetaData-description {
@@ -114,4 +133,41 @@
 	    	color: #000;
 	    }
 	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.courseMetaPage {
+		max-width: 100%;
+		display: block;
+	}
+	.courseList-box {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.courseList {
+		display: block;
+		width: 100%;
+		li {
+		    padding: 1em;
+		    display: inline-block;
+		    width: 180px;
+		    height: 60px;
+		    vertical-align: top;
+		    text-align: center;
+		}
+	}
+	.callbackForm-box {
+		display: none;
+	}
+	.courseMetaData-box {
+		margin: 0 auto;
+	    text-align: center;
+	    width: 100%;
+	    p {
+	    	text-align: justify;
+	    }
+	}
+
 }

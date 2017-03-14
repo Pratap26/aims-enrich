@@ -6,10 +6,10 @@ header {
     top: 0px;
     width: 100%;
     background: #fff;
-    height: 110px;
+    height: 90px;
 }
 .body-box {
-	margin-top: 110px;
+	margin-top: 90px;
 }
 
 
@@ -21,7 +21,7 @@ header {
 	display: inline-block;
     width: 100%;
     max-width: 250px;
-    margin: 2em 0 0 2em;
+    margin: 1em 0 0 2em;
     padding: 10px 30px 10px 0;
     border-right: 1px solid;
 	img {
@@ -58,13 +58,12 @@ header {
 
 	.interactBar {
 		display: block;
-		padding: 0.3em 0;
 		color: #000;
 	}
 	.navigationBar {
 		display: block;
 		background-color: #4f2582;
-		padding: 1em;
+		padding: 0.5em;
 		color: #fff;
 	}
 }
